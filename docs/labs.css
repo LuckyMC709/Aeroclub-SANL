@@ -1,0 +1,204 @@
+/* ===== Cabina interactiva ===== */
+.cockpit-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.seg{display:inline-flex;flex-wrap:wrap;gap:6px}
+.seg button{min-height:44px;padding:10px 14px;border:1px solid #cdd7d2;border-radius:5px;background:#eef1ea;font-size:12px}
+.seg button[aria-pressed=true]{background:var(--navy);color:#f8f1df;border-color:var(--navy)}
+.seg.small button{min-height:36px;padding:6px 10px;font-size:11px}
+.panel-wrap{background:#0b1114;border-radius:12px;padding:10px;box-shadow:inset 0 0 0 1px #24323a,0 18px 40px -24px #0b223080}
+.panel-svg{display:block;width:100%;height:auto;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.panel-svg .inst-hit,.panel-svg [data-sw],.panel-svg [data-mag],.panel-svg [data-primer],.panel-svg [data-fsel],.panel-svg [data-pbrake],.panel-svg [data-knob]{cursor:pointer;outline:none}
+.panel-svg .inst-hit:focus-visible>svg,.panel-svg .inst-hit.on>svg{filter:drop-shadow(0 0 7px #efb568)}
+.panel-svg [data-sw]:focus-visible rect:first-child,.panel-svg [data-knob]:focus-visible rect,.panel-svg [data-mag]:focus-visible circle:first-child{stroke:#efb568;stroke-width:3}
+.panel-svg [data-knob]{cursor:ns-resize}
+.panel-svg.lit text{fill:#ffd9a0}
+.panel-svg .lever,.panel-svg .kh,.panel-svg .key,.panel-svg .fh,.panel-svg .ph{transition:transform .12s}
+.panel-svg .shaft{transition:height .12s}
+.cockpit-msg{min-height:24px;margin:12px 4px;font-size:13px;color:#7a4b17;font-weight:600}
+.cockpit-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:20px;align-items:start}
+.deck{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.deck-group{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:16px}
+.deck-group h3{font-size:14px;margin:0 0 10px}
+.deck-group label{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;font-weight:600;margin-top:10px}
+.deck-group label input{width:100%}
+.deck-group output{font:12px ui-monospace,monospace;color:#34677c}
+.toggles{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.toggles button{min-height:44px;padding:9px 12px;border:1px solid #cdd7d2;border-radius:5px;background:#eef1ea;font-size:12px;text-align:left}
+.toggles button[aria-pressed=true]{background:#e6b46c;border-color:#a9742f;color:#2b1a05;font-weight:600}
+.toggles button[aria-pressed=true]::before{content:"● ";color:#7a3d00}
+.mags button[data-start]{background:#f3dfc1}
+.cockpit[data-mode=ground] .flight-only{opacity:.5}
+.cockpit[data-mode=ground] .flight-only::after{content:"Disponible en «En vuelo»";display:block;font-size:11px;color:var(--muted);margin-top:8px}
+.yoke-row{display:grid;grid-template-columns:170px 1fr;gap:12px;align-items:start}
+.yoke-pad{position:relative;height:140px;border-radius:8px;background:radial-gradient(circle at 50% 50%,#2c4a58,#13262f);touch-action:none;cursor:grab;overflow:hidden}
+.yoke-pad:focus-visible{outline:3px solid #efb568}
+.yoke-pad svg{position:absolute;inset:6px 10px 0;width:calc(100% - 20px);transition:transform .08s}
+.yoke-dot{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px;border-radius:50%;background:#efb568;box-shadow:0 0 0 4px #efb56840;pointer-events:none}
+.kollsman{display:grid;grid-template-columns:1fr auto auto auto;align-items:center;gap:6px;font-size:12px}
+.kollsman button{width:44px;height:44px;border:1px solid #cdd7d2;border-radius:5px;background:#eef1ea;font-size:18px}
+.kollsman output{font:13px ui-monospace,monospace;min-width:84px;text-align:center}
+.kollsman small{grid-column:1/-1;color:var(--muted);font-size:11px}
+.fails{grid-column:1/-1}
+.fails summary{cursor:pointer;font-weight:700;font-size:14px;min-height:32px}
+.side{display:grid;gap:14px}
+.guide,.inst-info{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:18px}
+.guide h3,.inst-info h3{font-size:18px;margin:4px 0 10px}
+.inst-info ul,.tips{padding-left:18px;font-size:12.5px;line-height:1.6}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.steps li{display:grid;grid-template-columns:20px 1fr auto;gap:8px;align-items:center;font-size:12px;padding:7px 8px;border-radius:5px;background:#f3f4ed}
+.steps li b{font-weight:600;color:#3f5d68;font-size:11px;text-align:right}
+.steps li small{grid-column:2/-1;color:var(--muted);font-size:10.5px}
+.steps .box{width:16px;height:16px;border:2px solid #9fb0b3;border-radius:4px}
+.steps li.done{background:#e3efe2}
+.steps li.done .box{background:#2e8b4a;border-color:#2e8b4a;box-shadow:inset 0 0 0 2px #fff}
+.drops{font:12px/1.6 ui-monospace,monospace;color:#7a4b17}
+@media(max-width:1100px){.cockpit-grid{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.deck{grid-template-columns:1fr}.side{grid-template-columns:1fr}.yoke-row{grid-template-columns:1fr}.panel-wrap{padding:4px;border-radius:8px;overflow-x:auto}.panel-svg{min-width:640px}.cockpit-bar .seg button{flex:1}}
+
+/* ===== Laboratorio aerodinámico ===== */
+.aero{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,1fr);gap:18px}
+.aero-stage{position:relative;background:#10232c;border-radius:10px;overflow:hidden;min-height:340px;aspect-ratio:16/9}
+.aero-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.aero-legend{position:absolute;right:12px;top:12px;display:flex;align-items:center;gap:6px;font-size:10px;color:#cfe3ea;background:#0b1a21cc;padding:6px 8px;border-radius:5px}
+.aero-legend .grad{width:70px;height:8px;border-radius:4px;background:linear-gradient(90deg,#40b0de,#142c3a,#f09646)}
+.aero-badges{position:absolute;left:12px;top:12px}
+.aero-badges span{font:600 11px/1 ui-monospace,monospace;letter-spacing:.5px;color:#bfe7cf;background:#0b1a21cc;padding:7px 9px;border-radius:5px;display:inline-block}
+.aero-badges span.bad{color:#ffd0c2;background:#7d2418dd}
+.aero-side{display:grid;gap:14px;align-content:start}
+.aero-controls,.aero-readout{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:16px}
+.aero-controls label,.turn-side label,.att-controls label{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;font-weight:600}
+.aero-controls input,.turn-side input,.att-controls input{width:100%}
+.aero-controls .seg{margin-top:10px}
+.aero-readout{display:grid;gap:10px}
+.aero-readout>div{display:flex;justify-content:space-between;gap:10px;font-size:12px;border-bottom:1px solid #edf0ea;padding-bottom:8px}
+.aero-readout>div.wide{display:block;border:0}
+.aero-readout b{font:600 13px ui-monospace,monospace;color:#1d4a5c;text-align:right}
+.aero-readout small{display:block;color:var(--muted);font-size:11px;margin-top:6px;line-height:1.5}
+.bar{position:relative;height:12px;background:#e3e8e1;border-radius:6px;overflow:visible}
+.bar i{display:block;height:100%;border-radius:6px;background:#7fb3e0;transition:width .15s}
+.bar i.over{background:#2e8b4a}
+.bar em{position:absolute;top:-4px;width:2px;height:20px;background:#102c3b}
+.aero-charts{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.aero-charts figure{margin:0;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:14px}
+.aero-charts figcaption{font-weight:700;font-size:13px;margin-bottom:6px}
+.aero-charts canvas{width:100%;height:210px;display:block}
+.k1{color:#7fb3e0}.k2{color:#c7843f}.k3{color:#2b7bb9}.k4{color:#c7843f}
+.aero-note{grid-column:1/-1;background:#eef3f4;border-left:3px solid #447f9b;padding:14px 16px;border-radius:4px;font-size:13px;line-height:1.65;margin:0}
+.att-lab,.turn-lab{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);gap:18px;align-items:start}
+.att-lab svg,.turn-lab svg{width:100%;border-radius:10px;display:block}
+.att-controls,.turn-side{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:16px;display:grid;gap:10px}
+.mini-table{width:100%;border-collapse:collapse;font-size:12px}
+.mini-table caption{text-align:left;font-size:11px;color:var(--muted);padding-bottom:6px}
+.mini-table th,.mini-table td{border:1px solid #dfe5df;padding:6px;text-align:center}
+.mini-table td:first-child{text-align:left;font-weight:600}
+@media(max-width:950px){.aero,.att-lab,.turn-lab{grid-template-columns:1fr}.aero-charts{grid-template-columns:1fr}}
+@media(max-width:700px){.aero-stage{aspect-ratio:4/3;min-height:260px}}
+.axes-lab{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(260px,1fr);gap:18px;align-items:start}
+.axes-lab svg{width:100%;display:block}
+.axes-controls{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:16px;display:grid;gap:10px}
+.axes-controls label{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;font-weight:600}
+.axes-controls input{width:100%}
+.lab-heading{font-size:30px;margin:6px 0 4px}
+.lab-source{margin-top:18px}
+@media(max-width:950px){.axes-lab{grid-template-columns:1fr}}
+
+/* ===== Rayos X: etiquetas de componentes ===== */
+.xr-labels{position:absolute;inset:0;pointer-events:none;z-index:3;overflow:hidden}
+.xr-label{position:absolute;left:0;top:0;pointer-events:auto;font:600 10px/1.2 Inter,Arial,sans-serif;color:#0f2530;background:#f2f4ee;border-left:3px solid var(--c,#efb568);padding:4px 7px;border-radius:3px;white-space:nowrap;box-shadow:0 2px 8px #0008;min-height:24px;margin:-12px 0 0 6px}
+.xr-label:hover,.xr-label:focus-visible{background:#ffe3b8}
+.xr-tip{position:absolute;left:16px;right:16px;bottom:56px;z-index:4;background:#0b1a21ee;color:#e6eee8;border:1px solid #3d5a66;border-radius:6px;padding:10px 12px;font-size:12px;line-height:1.5;display:grid;gap:3px}
+.xr-tip strong{color:#efb568}
+@media(max-width:700px){.xr-label{font-size:9px;padding:3px 5px}}
+
+/* ===== Datos del LV-LLS en las fichas ===== */
+.facts dl{margin:0;display:grid;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.facts dl>div{display:grid;grid-template-columns:38% 1fr;gap:8px;padding:8px 10px;font-size:11.5px;border-top:1px solid #edf0ea}
+.facts dl>div:first-child{border-top:0}
+.facts dt{color:var(--muted);font-weight:600}
+.facts dd{margin:0;line-height:1.5}
+.facts small{display:block;font:9px/1.6 ui-monospace,monospace;letter-spacing:.4px;margin-top:2px;color:#7d8d91}
+.facts small.src-manual{color:#2e6b3d}.facts small.src-checklist{color:#8a5a1f}
+.part-card .primary.full{margin-top:16px}
+.carb-lab{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr);gap:18px;align-items:start}
+.carb-visual svg{width:100%;display:block;border-radius:10px}
+.carb-side{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:16px;display:grid;gap:10px}
+.carb-side label{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;font-weight:600}
+.carb-side input{width:100%}
+.carb-msg{min-height:40px;font-size:13px;color:#7a4b17;font-weight:600;margin:0}
+.aero-readout b.bad{color:#b0331f}
+.carb-air path{stroke-dasharray:10 14;animation:carbair 1.2s linear infinite}
+@keyframes carbair{to{stroke-dashoffset:-48}}
+.carb-spray{animation:pulse .5s infinite alternate}
+@media(max-width:950px){.carb-lab{grid-template-columns:1fr}}
+.lab-tabs a.lab-tab{min-height:48px;background:#e4e9e1;border:1px solid #d0d9d3;border-radius:5px;padding:12px 20px;font-size:12px;display:inline-flex;align-items:center}
+.lab-tabs a.lab-tab[aria-current]{background:var(--navy);color:#f9f2df}
+.swipe-hint{display:none;font-size:12px;color:var(--muted);margin:6px 2px 0}
+@media(max-width:700px){.swipe-hint{display:block}}
+
+/* ===== Sistemas animados ===== */
+.sys-host{margin:18px 0;container-type:inline-size}
+.sys-lab{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr);gap:18px;align-items:start}
+.sys-visual svg{display:block;width:100%;height:auto;border-radius:10px}
+.sys-visual .pipe{fill:none;stroke:#26404b;stroke-linecap:round;stroke-linejoin:round}
+.sys-visual .flow{fill:none;stroke-width:3.5;stroke-dasharray:7 9;stroke-linecap:round;stroke-linejoin:round;opacity:.12}
+.sys-visual .flow.on{opacity:1;animation:sysflow 1s linear infinite}
+.sys-visual .flow.on.rev{animation-direction:reverse}
+@keyframes sysflow{to{stroke-dashoffset:-32}}
+.sys-visual .cable{fill:none;stroke-width:2.5;stroke-dasharray:10 6}
+.sys-visual [data-e].active>rect{stroke:#9fd36a;stroke-width:2.5}
+.sys-visual [data-e].failed>rect{stroke:#e5604a;stroke-width:2.5;stroke-dasharray:5 3}
+.sys-visual [data-e^=ail].up rect{fill:#a9dcef}
+.sys-visual [data-e^=ail].down rect{fill:#24485a}
+.sys-visual [data-e^=cyl].fire>rect:first-child{fill:#8a6a3a}
+.sys-visual .sys-hot{cursor:pointer;outline:none}
+.sys-visual .sys-hot:hover,.sys-visual .sys-hot:focus-visible,.sys-visual .sys-hot.on{filter:drop-shadow(0 0 6px #efb568)}
+.sys-msg{min-height:44px;margin:10px 2px 0;font-size:13px;line-height:1.5;color:#7a4b17;font-weight:600}
+.sys-side{display:grid;gap:12px;align-content:start}
+.sys-group{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:14px}
+.sys-group h3{font-size:13px;margin:0 0 8px}
+.sys-group label{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;font-weight:600;margin-top:8px}
+.sys-group label input{width:100%}
+.sys-group output{font:12px ui-monospace,monospace;color:#34677c}
+.sys-group.fails{border-color:#e6c3b8;background:#fff8f5}
+.sys-group.fails .toggles button[aria-pressed=true]{background:#e5856c;border-color:#a3452c;color:#2b0b03}
+.sys-label{font-size:12px;font-weight:600;margin:4px 0 6px}
+.sys-acc{font-size:13px;line-height:1.55;margin:0}
+.sys-acc small{display:block;color:var(--muted);font-size:11px;margin-top:6px}
+.sys-foot{grid-column:1/-1}
+.sys-foot .tips{margin:0 0 8px}
+.sys-insts{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:8px;margin-top:10px;background:#0b1114;border-radius:10px;padding:10px}
+.sys-insts figure{margin:0;text-align:center}
+.sys-insts svg{width:100%;height:auto;border-radius:0}
+.sys-insts figcaption{font-size:10px;color:#9fc0ca;margin-top:4px}
+@container (max-width:820px){.sys-lab{grid-template-columns:1fr}.sys-side{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}}
+@media(prefers-reduced-motion:reduce){.sys-visual .flow.on{animation:none;stroke-dasharray:none}}
+@container (max-width:560px){.sys-visual:not(:has(.sys-insts)){position:sticky;top:0;z-index:3;background:var(--white);padding-bottom:4px;box-shadow:0 10px 14px -12px #0b223060}.sys-msg{font-size:12px;min-height:36px}}
+
+/* Revisión: lectura cómoda, acercamiento por región y cabina conectada. */
+.cockpit-views{margin:0 0 8px}.cockpit-views button{font-size:14px}
+.panel-wrap[hidden],.cockpit-scene[hidden]{display:none}
+.panel-wrap[data-zoom=pilot] .panel-svg,.panel-wrap[data-zoom=engine] .panel-svg{min-width:0;max-height:650px}
+.cockpit-scene{position:relative;height:560px;border-radius:12px;overflow:hidden;background:#122d3a}
+.cockpit-scene canvas{display:block;width:100%;height:100%;touch-action:none}
+.scene-tools{position:absolute;bottom:12px;left:12px;right:12px;display:flex;align-items:center;gap:12px;color:#fff;font-size:14px}
+.scene-tools span{padding:8px;background:#10232ce6;border-radius:5px}
+.scene-tools button{padding:10px 16px;min-height:44px;background:#f4ecdd;border:1px solid #9ba7a8;border-radius:5px;color:#102c3b}
+.flight-readouts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:12px 0}
+.flight-readouts span{padding:12px;background:#e6ebe7;border-radius:5px;font-size:13px;color:#385562}
+.flight-readouts b{display:block;font:600 18px/1.6 ui-monospace,monospace;color:#102c3b}
+.instrument-detail{max-width:240px;margin:0 auto 16px}.instrument-detail svg{width:100%;height:auto}
+.seg button,.seg.small button,.toggles button,.deck-group label,.deck-group output,.kollsman,.kollsman output,.aero-controls label,.turn-side label,.att-controls label,.axes-controls label,.carb-side label,.sys-group label,.sys-group output,.aero-readout>div,.aero-readout b,.steps li,.steps li b,.mini-table{font-size:14px}
+.seg.small button{min-height:44px}.inst-info ul,.tips,.sys-acc,.sys-msg,.aero-note{font-size:16px}
+.facts dl>div{font-size:14px}.facts small,.steps li small,.kollsman small,.aero-readout small,.sys-acc small,.mini-table caption{font-size:12px}
+.toggles button[aria-pressed=true]::before{content:none}
+.cockpit-msg,.drops{font-size:14px}.xr-label{font-size:12px;min-height:32px}
+.cockpit .deck-group{min-width:0}.cockpit .side{min-width:0}.steps li{grid-template-columns:18px minmax(0,1fr)}.steps li b{grid-column:2;text-align:left}
+@media(max-width:700px){.cockpit-scene{height:420px}.scene-tools{flex-wrap:wrap;font-size:12px}.scene-tools span{max-width:100%}.flight-readouts{grid-template-columns:repeat(2,minmax(0,1fr))}.cockpit-bar .seg{width:100%}.cockpit-views{display:grid;grid-template-columns:1fr 1fr}.cockpit-views button{padding:10px}.panel-wrap[data-zoom=all]{overflow-x:auto}.instrument-detail{max-width:220px}.xr-label{font-size:12px}.aero-badges{top:auto;bottom:12px;right:12px}.aero-legend{font-size:12px}.aero-badges span{font-size:12px;line-height:1.4}}
+@media(prefers-reduced-motion:reduce){.panel-svg *,.yoke-pad svg,.bar i{transition:none}.carb-air path,.carb-spray{animation:none}}
+
+.avionics input,.avionics select{width:100%;min-height:44px;padding:9px;border:1px solid #8faaa9;border-radius:5px;font:16px ui-monospace,monospace;background:#fff;color:#102c3b}.avionics output{display:block;margin-top:8px}.avionics small{font-size:12px;color:#405e68}.avionics .fine-print{font-size:13px}
+
+.sys-lab[data-paused=true] *{animation-play-state:paused!important}.sys-visual>[data-system-pause]{margin-bottom:10px}
+
+.instrument-dialog{width:min(680px,calc(100% - 24px));max-height:88dvh;padding:16px;border:1px solid #6a838b;border-radius:12px;background:#f6f5ed;color:#102c3b}.instrument-dialog::backdrop{background:#071d2bcc;backdrop-filter:blur(3px)}.instrument-dialog>button{position:sticky;top:0;z-index:2;background:#122e3b;color:#fff;min-height:44px;width:100%;margin-bottom:12px}.instrument-dialog .inst-info{padding:10px;border:0}.instrument-dialog .instrument-detail{max-width:280px}.instrument-dialog .fine-print{font-size:13px}
+.aero-stage,.aero-side,.aero-charts,.aero-charts figure,.att-lab>* , .turn-lab>*{min-width:0}.aero-stage{width:100%;max-width:100%}
+@media(max-width:950px){.aero,.aero-charts,.att-lab,.turn-lab,.axes-lab,.carb-lab{grid-template-columns:minmax(0,1fr)}}

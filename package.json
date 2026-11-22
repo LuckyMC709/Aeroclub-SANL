@@ -1,0 +1,14 @@
+{
+  "name": "lv-lls-hangar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 scripts/serve.py",
+    "vendor": "node scripts/vendor.mjs",
+    "check": "node scripts/check.mjs && node scripts/test-sim.mjs"
+  },
+  "devDependencies": {
+    "three": "0.180.0"
+  }
+}

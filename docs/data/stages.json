@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1",
+    "title": "PREPARACIÓN DE CABINA  (Cockpit/flight deck)",
+    "text": "Documentación……………….……………....  A bordo \nFreno de Parqueo...……...…………………....  Colocado \nCalefactor del Carburador…………………....  Aire Frío \nMezcla……………….…………………………  Cortada \nAcelerador……...……………………………...  Reducido \nMagnetos………………………………………  Cortados (Off) \nBatería………………………… ………………  Conectar (On) \nFusibles…………………..…………………….  Adentro \nIndicador de Combustible……….....…………  Verificar Cantidad \nEquipos y Radio (Com/Nav)…………………  Selectar Frecuencia \nBatería………………………………………….  Off \nFlaps………………………………...………….  Desplegar (Full)",
+    "page": 1,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "2",
+    "title": "INSPECCIÓN EXTERIOR  (Preflight Inspection)",
+    "text": "LADO DERECHO \n \nFlaps…………………………………………....  Verificar estado \nAlerón………………………………….……....  Verificar Charnelas  y Movimiento \nBorde Marginal y Luz…………………………  Verificar estado \nBorde de Ataque…….………………………...  Verificar estado \nRueda Derecha y Sistema de Freno.…………  Verificar estado \nAmortiguador………………………………….  Verificar estado \nTanque de Combustible……………………….  Drenar y verificar cantidad \nTapa de combustible…………………………..  Verificar cerrada y trabada \n \nMOTOR \n \nAceite……..……………………………………  Verificar cantidad (4 Min 6 Max) \nMagnetos, Bujías, Cableado………………….  Verificar estado general \nHélice…………………………………………..  Verificar estado \nCorrea de alternador…………………………..  Verificar tensión \nRueda de Nariz………………………………..  Verificar estado \nAmortiguador………………………………….  Verificar estado \nNivel Liquido de Freno……………………….  Verificar cantidad \nFiltro de Combustible…………………………  Drenar y Verificar \n \nLADO IZQUIERDO \n \nBorde de Ataque…………………………….…  Verificar estado \nTanque de Combustible…………………….…  Drenar y verificar cantidad \nTapa de Combustible…………………….……  Verificar cerrada y trabada \nRueda Izquierda y Sistema de Freno…………  Verificar estado \nTubo Pitot y Estática………………….………  Verificar sin obstrucción \nChapita Alarma de Perdida…………...……...  Verificar sonido y libre movimiento \nBorde Marginal y Luz…………………………  Verificar estado \nAlerón………………………………….……....  Verificar Charnelas  y Movimiento \nFlaps…………………………………………....  Verificar estado \nFuselaje lado izquierdo………………………..  Verificar estado y antenas \n \nEMPENAJE \n \nTimon de Profundidad………………………..  Verificar estado y charnelas \nTimon de Dirección…………………………...  Verificar estado \nLuz Anticolisión…...…………………………..  Verificar estado \nFuselaje lado derecho………………………….  Verificar estado y antenas",
+    "page": 1,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "3",
+    "title": "ANTES DE LA PUESTA EN MARCHA  (Before engine start)",
+    "text": "Revisión e Inspección Exterior ……………....  Completada \nFlaps…………………………………………....  Retraer \nPuerta de Cabina……………………………....  Cerrada y asegurada \nAsientos y Cinturones…………………………  Colocados y Ajustados \nFreno de Parqueo……………………………...  Colocado \nFusibles…………………………………………  Verificar Adentro \nEquipos y Radios (Com y Nav) ………………  Off \nCalefactor del Carburador…………………….  Cerrado \nSelector de Tanque de Combustible………….  Abrir Tanque Deseado",
+    "page": 2,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "4",
+    "title": "PUESTA EN MARCHA  (Engine Start)",
+    "text": "* Si Hay Torre de Control:  \n \nBateria…………………………………………  On \nEquipos Y Radios…………………………….  On \n \n \nSolicitar Autorización para Puesta en Marcha \nUna vez solicitado \n \nBateria…………………………………………  Off \nEquipos Y Radios…………………………….  Off \n \n \n*Si No Hay Torre de Control: Continuamos con La Puesta En Marcha. \n \nMezcla………………………………………..  Rica \nPotencia………………………………………  Avanzar 1/4 \nInyector (Primer)…………………………….  A Requerimiento \nBatería………………………………………..  Conectar (ON)  \nLuz Anticolisión……………………………..  Conectar (ON) \nBomba Eléctrica de Combustible……….…..  Conectar (ON) \nÁrea de Hélice ………….…………………...  Libre \nMagnetos……………………………………..  Both/Start \nAcelerador……………………………………  Ajustar 1000 RPM \nAlternador……………………………….......  Conectar y Verificar Carga",
+    "page": 2,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "5",
+    "title": "POSTERIOR A LA PUESTA EN MARCHA  (After Engine Start)",
+    "text": "Presión de Aceite…………………………….  Verificar \n \nSi no hay presión de aceite dentro de los 30 segundos, parar el Motor \n \nPresión de Combustible……………………...  Verificar \nPresión de Vacío……………………………...  Verificar Funcionamiento \nBomba de Combustible……………………....  Off \nVelocímetro…………………………………… Chequear en Cero  \nHorizonte Artificial…………………………..  Ajustar \nAltímetro……………………………………...  Ajustar QNH \nVariometro……………………………………  Chequear en Cero \nGiro Direccional……………………………..   Ajustar con brújula \nIndicador de Giros y Ladeos………………...  Chequear \nEquipos Y Radios…………………………….  Conectar (ON) \nInstrucciones de Rodaje……………………...  Solicitar",
+    "page": 2,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "6",
+    "title": "RODAJE  (Taxiing)",
+    "text": "Luces de Nav Y Cabina……………………….  A Requerimiento \nÁrea de Rodaje………………………………...  Libre \nFreno de Parqueo…………….………………..  Liberar \nFrenos……………………………………….....  Verificar \nControl de Dirección……………....………….  Verificar",
+    "page": 3,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "7",
+    "title": "PRUEBA DE MOTOR EN TIERRA (Engine Run-Up)",
+    "text": "Freno de Parqueo…….………………………..  Colocar \nMezcla………………………………………….  Rica \nPotencia……………………………...………...  Ajustar 2000 RPM \nInstrumentos de Motor…………………..…...  Chequear Arco Verde \nMagnetos……………………..………………..  Comprobar Caída Max 175 RPM     \n                                                                   Dif Max entre ambos 50 RPM \nMedidor de Succión...……..………………….  Chequear entre 4 y 6 HG \nCalefactor del Carburador…………………….  Chequear y Verificar Caída \nPotencia………………………………………..  Reducir 1000 RPM \nComandos de Vuelo……………………...…...  Verificar Libre Movimiento \nCompensadores………………………………..  Neutros \nCalefacción de Cabina………………………...  Cerrado \nFlaps……………………………………………  Selectar \nIngreso a Pista…………………………………  Solicitar \nFreno de Parqueo…….………………………..  Liberar",
+    "page": 3,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "8",
+    "title": "ANTES DEL DESPEGUE (Before Take Off)",
+    "text": "Puerta de Cabina……………………………....  Cerrada y asegurada \nGiro Direccional……………………………….  Ajustar en Rumbo \nMezcla………………………………………….  Rica \nBomba eléctrica de Combustible……………...  Conectar (ON) \nLuz de Aterrizaje………………………………  Conectar (ON) \nVentanilla………………………………………  Cerrada \nBriefing de Despegue y Emergencia………….  Realizar \nAutorización Para Despegue………………….  Solicitar",
+    "page": 3,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "9",
+    "title": "DESPEGUE (Take Off)",
+    "text": "Potencia………………………………………..  Máxima RPM \nEje de Pista……………………………………..  Alineado \n \nDurante la Carrera de Despegue \n \nInstrumentos de Motor………………………..  Chequear Arco Verde \nVelocímetro…………………………………….  Vivo  \nRotación………………………………………..  65/70 Kts  \nAscenso Normal……………………………….  80 Kts  \nDurante el Ascenso……………………………  Mantener Eje de Pista",
+    "page": 3,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "10",
+    "title": "POSTERIOR AL DESPEGUE (After Take Off)",
+    "text": "Bomba eléctrica de Combustible……………..  Off \nLuz de Aterrizaje……………………………...  Off \nFlaps……………………………………………  Retraer \nPotencia………………………………………..  Reducir",
+    "page": 3,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "11",
+    "title": "CRUCERO (Cruise)",
+    "text": "Potencia………………………………………..  Ajustar 2300/2400 RPM \nMezcla………….……………………………...  Ajustar \nInstrumentos de motor…………..……………  Chequear",
+    "page": 4,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "12",
+    "title": "DESCENSO (Descend)",
+    "text": "Calefactor del Carburador………..…………..  A Requerimiento \nAltímetro………….…………………………...  Ajustar QNH",
+    "page": 4,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "13",
+    "title": "ANTES DEL ATERRIZAJE (Before Landing)",
+    "text": "Tanque de Combustible………………………..  Tanque Mayor Cantidad \nCinturones……………………………………...  Ajustados \nMezcla…………………………………………..  Rica \nBomba Eléctrica de Combustible…………...…  Conectar (ON) \nLuz de Aterrizaje……………………………….  Conectar (ON) \nCalefactor del Carburador……………………..  A Requerimiento \nPotencia…………………………………………  Ajustar para descenso \nFlaps…………………………………………….  A Requerimiento",
+    "page": 4,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "14",
+    "title": "DESPUES DEL ATERRIZAJE (After Landing)",
+    "text": "Bomba eléctrica de Combustible………………  Off \nLuz de Aterrizaje……………………………….  Off \nFlaps…………………………………………….  Retraer \nTransponder (XPND)…………….……………  Standby",
+    "page": 4,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  },
+  {
+    "id": "15",
+    "title": "PARADA DE MOTOR (Shutdown)",
+    "text": "Freno de Parqueo……………………………….  Colocado \nEquipos y Radios (Com/Nav/XPND).….…...  Off \nPotencia…………………………………………  1100 RPM \nMezcla…………………………………………..  Cortar \nMagnetos………………………………………..  Off \nLuz de Navegación, Anticolisión Y Cabina….  Off \nBatería/Alternador……………………...……..  Off \nSelector de Tanque de Combustible…….…….  Off",
+    "page": 4,
+    "source": "material/checklist-pa28-lv-lls.pdf"
+  }
+]

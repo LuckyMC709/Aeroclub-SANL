@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "title": "FUEGO EN EL MOTOR DURANTE LA PUESTA EN MARCHA",
+    "text": "Ítem Acción / condición \nArrrancador Acoplar \nMezcla Cortar \nAcelerador Todo adelante \nBomba eléctrica de combustible Off \nSelector de Tanque de Combustible Cerrar \n  \nSi el fuefo persiste abandoner la aeronave",
+    "page": 1,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "2",
+    "title": "FALLA DE MOTOR DUANTE EL DESPEGUE",
+    "text": "Ítem Acción / condición \n \nSI HAY PISTA REMANENTE ATERRIZAR \n  \nSI NO HAY PISTA REMANENTE PARA ATERRIZAR \nVelocidad de planeo Mantener 76 Kts \nVirajes Suaves (Max 20º) \nFlaps A requerimiento \n  \nSI SE HA ALCANZADO UNA ALTURA SUFICIENTE PARA EL REENCENDIDO \n  \nMantener Velocidad de planeo  76 Kts \nSelector de Tanque de Combustible Selectar Mayor Cantidad \nBomba eléctrica de combustible Conectar (On) \nMezcla Rica \nCalefactor del Carburador Aire Caliente \nCebador Verificar trabado \n  \nSI NO REENCIENDE, PREPARARSE PARA UN ATERRIZAJE SIN POTENCIA",
+    "page": 1,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "3",
+    "title": "FALLA DE MOTOR EN VUELO",
+    "text": "Ítem Acción / condición \nVelocidad de planeo Mantener 76 Kts \nSelector de Tanque de Combustible Selectar Mayor Cantidad \nBomba eléctrica de combustible Conectar (On) \nMezcla Rica \nCalefactor del Carburador Aire Caliente \nInstrumentos de motor Verificar causa de la falla \nCebador Verificar trabado \nSI NO EXISTE PRESIÓN DE COMBUSTIBE, VERIFICAR QUE LA POSICIÓN DEL \nSELECTOR DE TANQUE DE COMBUSTIBLE ESTÉ ABIERTO EN EL TANQUE DE MAYOR \nCANTIDAD. \nCUANDO SE RESTAURE LA POTENCIA: \nCalefactor del Carburador Cerrar \nBomba eléctrica de combustible Off \n  \nSI LA POTENCIA NO SE RESTAURA, PREPARARSE PARA UN ATERRIZAJE SIN \nPOTENCIA",
+    "page": 1,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "4",
+    "title": "FUEGO DE MOTOR EN VUELO",
+    "text": "Ítem Acción / condición \nSelector de Tanque de Combustible Cerrar \nAcelerador Cerrar \nMezcla Cortar \nBomba eléctrica de combustible Off \nCalefactor del Carburador Aire Frio \nDeshelador de parabrisas Cerrar \n  \nREALIZAR ATERRIZAJE SIN POTENCIA",
+    "page": 2,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "5",
+    "title": "FUEGO ELÉCTRICO (HUMO EN CABINA)",
+    "text": "Ítem Acción / condición \nMaster Off \nAlternador Off \nVenteos Abrir \nCalefacción de cabina Cerrar \n  \nATERRIZAR TAN PRONTO SEA POSIBLE",
+    "page": 2,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "6",
+    "title": "ATERRIZAJE SIN POTENCIA",
+    "text": "Ítem Acción / condición \nVelocidad de planeo 76 Kts \nLocalizar un campo  \nEstablecer un circuito en espiral  \nCuando el campo sea alcanzado colocar flaps a requerimiento \nEl contacto con el suelo debe realizarse con la menor Velocidad possible con flaps extendidos \ny realizar aterrizaje inminente \nCUANDO EL ATERRIZAJE SEA INMINENTE \nFlaps A requerimiento \nAcelerador Cerrar \nMezcla Cortar (Off) \nMagnetos Cortar \nMaster Off \nAlternador Off \nSelector de Tanque de Combustible Cerrar",
+    "page": 2,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "7",
+    "title": "PERDIDA DE PRESIÓN DE ACEITE",
+    "text": "Ítem Acción / condición \nAterrizar tan pronto sea posible e investigar las causas \nPrepararse para un aterrizaje sin potencia",
+    "page": 3,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "8",
+    "title": "ALTA TEMPERATURA DE ACEITE",
+    "text": "Ítem Acción / condición \nAterrizar tan pronto sea posible e investigar las causas \nPrepararse para un aterrizaje sin potencia",
+    "page": 3,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "9",
+    "title": "RECUPERACIÓN DE UNA BARRENA",
+    "text": "Ítem Acción / condición \nAcelerador Ralentí \nAlerones Neutral \nTimon de dirección Todo dirección contraria al sentido del \ngiro  \nComandos Todo Adelante \nTimón de dirección Neutral (Cuando se detenga el giro) \nComandos A requerimiento para recuperar el nivel \nde vuelo",
+    "page": 3,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "10",
+    "title": "PERDIDA DE PRESIÓN DE COMBUSTIBLE",
+    "text": "Ítem Acción / condición \nBomba eléctrica de combustible Conectar \nSelector de Tanque de Combustible Verificar mayor cantidad",
+    "page": 3,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "11",
+    "title": "FALLA ELÉCTRICA",
+    "text": "Ítem Acción / condición \nDurante la Carrera de Despegue \nAmperímetro Verificar funcionamiento \nSi el Amperímetro marca cero Alternador Desconectar \nCargas eléctricas  Reducir al mínimo \nFusible del Alternador Verificar y resetear a requerimiento \nAlternador  Conectar \nSi no se reestablece Alternador Desconectar \n  \nREDUCIR CARGAS AL MINIMO Y ATERRIZAR TAN PRONTO SEA POSIBLE",
+    "page": 3,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "12",
+    "title": "SOBRECARGA ELÉCTRICA",
+    "text": "Ítem Acción / condición \nDurante la Carrera de Despegue \nAlternador con + de 20 amperes sobre la carga conocida \nAlternador Conectar \nBatería Desconectar \nSI LA CARGA DEL ALTERNADOR SE REDUCE, REDUCIR CARGAS AL MINIMO \nATERRIZAR TAN PRONTO SEA POSIBLE \n \nDEBIDO AL INCREMENTO DE TENSIÓN Y DE RUIDO DE RADIO FRECUENCIA, LA \nOPERACIÓN CON LA LLAVE DE ALTERNADOR CONECTADA Y LA BATERÍA \nDESCONECTADA, DEBERA SER HECHA SOLO CUANDO SEA REQUERIDA POR UNA \nFALLA EN EL SISTEMA ELÉCTRICO \n \nSi la carga no se reestablece  \nAlternador  Desconectar  \nBatería  A requerimiento \nATERRIZAR TAN PRONTO SEA POSIBLE",
+    "page": 4,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "13",
+    "title": "PUERTA ABIERTA",
+    "text": "Ítem Acción / condición \nDurante la Carrera de Despegue \nSI LOS CERROJOS SUPERIORES E INFERIORES ESTÁN ABIERTOS, LA MISMA \nPERMANECERA LEVEMENTE ABIERTA Y LAS VELOCIDADES SE REDUCIRAN UN \nPOCO. \nPARA CERRAR LA PUERTA EN VUELO REDUCIR LA VELOCIDAD A 90 KTS \nVenteos Abrir \nVentanilla de cabina Cerrar \nSi la traba superior está abierta Trabar \nSi la traba lateral está abierta Tirar del apoya brazos, palanca y trabar  \nSi ambas trabas están abiertas Cerrar primero la lateral y luego la \nsuperior",
+    "page": 4,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  },
+  {
+    "id": "14",
+    "title": "FORMACIÓN DE HIELO EN EL CARBURADOR",
+    "text": "Ítem Acción / condición \nCalefacción del Carburador Abrir  \nMezcla Efectuar máxima suavidad",
+    "page": 4,
+    "source": "material/checklist-emergencias-pa28.pdf"
+  }
+]
